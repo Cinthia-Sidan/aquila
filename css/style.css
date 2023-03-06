@@ -396,7 +396,8 @@ footer{
 }
 .cover-academy{
     background-image: url("../imagenes/academy.jpg");
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
      }
 .recruiting{
@@ -408,16 +409,16 @@ footer{
 .contenedor-sourcing{
     background-image: url("../imagenes/academy2.png");
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background-size: cover;
 }
 .contenedor-academy{
-    height: 100%;
+    height: 90vh;
 }
 .contenedor-recruiting{
     background-image: url("../imagenes/academy1.png");
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background-size: cover;
     display: flex;
     flex-direction: row-reverse;
@@ -425,8 +426,8 @@ footer{
 }
 .boton-verde-academy{
     background-color: #19b8a0 ;
-    width: 120px;
-    height: 30px;
+    width: 180px;
+    height: 40px;
     border-radius: 2px;
     border: 0;
     color:181d29;
@@ -436,8 +437,8 @@ footer{
 }
 .boton-naranja-academy{
     background-color: #ff7f11 ;
-    width: 120px;
-    height: 30px;
+    width: 180px;
+    height: 40px;
     border-radius: 2px;
     border: 0;
     color:181d29;
@@ -459,7 +460,7 @@ footer{
 .titulo-naranja{
     color: #ff7f11;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     margin: 10px;
 
 }
@@ -467,7 +468,7 @@ footer{
     width: 300px;
     color: #19b8a0;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     margin: 10px;
 
 }
@@ -478,10 +479,17 @@ footer{
     flex-direction: column;
     align-items:flex-end;
 }
+.info-recruiting-naranja{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .info-recruiting{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
 }
 @media (max-width: 768px) {
     .header{
@@ -496,6 +504,10 @@ footer{
     .navbar{
         background-color: #000000;
     }
+    .cover {
+        background-image: url(../imagenes/home-movil.png);
+    }
+
     .footer__redes__contenedor{
         display: none;
     }
@@ -511,5 +523,47 @@ footer{
     }
     .tarjeta-nosotros {
         height: 600px;
+    }
+    .cover-academy {
+        background-image: url(../imagenes/academy-movil.png);
+        width: 100%;
+        background-size: cover;
+    }
+    .contenedor-academy {
+        height: 600px;
+    }
+    .intro__logo {
+        width: 60%;
+    }
+    .contenedor-recruiting{
+        background-image: url("../imagenes/naranja-movil.png");
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor-sourcing{
+        background-image: url("../imagenes/verde-movil.png");
+        align-items: center;
+        justify-content: center;
+    }
+    .recruiting {
+        width: 80%;
+    }
+    .info-recruiting {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+    .sourcing {
+        padding: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+    .titulo{
+        text-align: center;
     }
 }
