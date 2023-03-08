@@ -367,7 +367,7 @@ body {
     width: 40px; } }
 
 .cover_nosotros {
-  background-image: url("../imagenes/fondo-nosotros.jpg");
+  background-image: url("../imagenes/fondo-nosotros.png");
   width: 100%;
   background-size: cover; }
 
@@ -418,6 +418,13 @@ body {
 
 .punto {
   width: 20px; }
+
+@media (max-width: 768px) {
+  .nosotros .tarjeta-nosotros {
+    height: 600px;
+    width: 90vw; }
+  .cover_nosotros {
+    background-image: url("../imagenes/nosotros-movil.png"); } }
 
 .cover_servicios {
   background-color: #181d29; }
