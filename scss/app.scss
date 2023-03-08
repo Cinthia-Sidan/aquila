@@ -1,0 +1,20 @@
+//General
+@import "./general/typography.scss";
+@import "./general/colors.scss";
+
+//Layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+//Pages
+@import "./pages/home.scss";
+@import "./pages/academy.scss";
+@import "./pages/contacto.scss";
+@import "./pages/nosotros.scss";
+@import "./pages/servicios.scss";
+
+
+*{
+    padding:0; 
+    margin:0; 
+    }

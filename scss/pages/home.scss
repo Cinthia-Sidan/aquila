@@ -1,0 +1,56 @@
+.cover{
+    background-image: url("../imagenes/introFondo.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+body{
+    background-color: $base-primary !important;
+    overflow-x: hidden;
+
+    .principal{
+        height: 90vh;
+
+        .contenedor{
+            height: 100%;
+        }
+    }
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+
+    .intro__logo{
+        width: 30%;
+        margin-left: 15px;
+    }
+    .intro__titulo{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-left: 15px;
+    }
+}
+
+.contenedor-redes{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    .redes{
+        margin-right: 5%;
+        
+        .redes__icon{
+            width: 40px;
+            margin: 5px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .cover {
+        background-image: url(../imagenes/home-movil.png);
+    }
+}

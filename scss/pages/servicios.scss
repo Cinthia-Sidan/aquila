@@ -1,0 +1,146 @@
+.cover_servicios{
+    background-color: $base-primary;
+}
+
+.intro-servicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10%;
+    .intro-servicios-imagen{
+        height: 100%;
+        text-align: center;
+
+        .servicios__imagen{
+            height: 450px;
+        }
+    }
+    .intro-servicios-info{
+        height: 100%;
+        margin-top: 70px;
+
+        .intro__titulo{
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin-left: 15px;
+        }
+        .intro-subtitulo{
+            color: 19b8a0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            margin-left: 15px;
+        }
+        .intro-parrafo{
+            color: #ffff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin: 15px;
+        }
+        .boton-primario{
+            background-color: $primary-color ;
+            width: 120px;
+            height: 30px;
+            border-radius: 2px;
+            border: 0;
+            color:181d29;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 40px;
+            margin-left: 15px;
+        }
+    }
+}
+
+.contenedor-tarjetas{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .tarjeta-servicios{
+        width: 260px;
+        height: 250px;
+        background-color: 37465b;
+        padding: 5px;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-evenly;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+    .tarjeta-servicios-seleccionada{
+        width: 260px;
+        height: 250px;
+        background-color: ff7f11;
+        padding: 5px;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-evenly;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+}
+
+.tarjeta-servicio-texto{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+.tarjeta-servicios__titulo{
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.tarjeta-servicio-parrafo{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+
+}
+.icon-tarjeta-servicios{
+    width: 40px;
+}
+.icon-flecha{
+    width: 30px;
+}
+.tarjeta-servicio-link{
+    text-decoration: none;
+    color: $secondary-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.tarjeta-servicio-link-active{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .servicios__imagen {
+        height: 450px;
+        margin-left: 10px;
+    }
+    .intro-servicios-info{
+        margin-top: 30px !important;
+    }
+    .contenedor-tarjetas{
+        margin: 5% !important;
+    }
+}

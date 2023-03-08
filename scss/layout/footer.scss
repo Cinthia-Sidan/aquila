@@ -1,0 +1,33 @@
+.contenedor_footer{
+    width: 100vw !important;
+}
+footer{
+
+    height: 80px;
+    background-color: $base-primary;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__logo{
+        width: 100px;
+    }
+    .footer__label{
+        font-family: 'Poppins';
+        color: white;
+        font-size: 15px;
+        padding: 2px;
+    }
+    .redes__icon{
+        width: 40px;
+        margin: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .footer__redes__contenedor{
+        display: none;
+    }
+}

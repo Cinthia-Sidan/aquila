@@ -1,0 +1,135 @@
+.cover-academy{
+    background-image: url("../imagenes/academy.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.contenedor-academy{
+    height: 90vh;
+}
+.contenedor-sourcing{
+    background-image: url("../imagenes/academy2.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+
+    .sourcing{
+        padding: 40px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+    }
+}
+.contenedor-recruiting{
+    background-image: url("../imagenes/academy1.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: left;
+
+    .recruiting{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+
+    .intro__logo{
+        width: 30%;
+        margin-left: 15px;
+    }
+    .intro__titulo{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-left: 15px;
+    }
+}
+
+.boton-verde-academy{
+    background-color: $primary-color ;
+    width: 180px;
+    height: 40px;
+    border-radius: 2px;
+    border: 0;
+    color:181d29;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.boton-naranja-academy{
+    background-color: $secondary-color;
+    width: 180px;
+    height: 40px;
+    border-radius: 2px;
+    border: 0;
+    color:181d29;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.info-recruiting-naranja{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.info-recruiting{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-academy {
+        height: 600px;
+    }
+    .intro__logo {
+        width: 60%;
+    }
+    .contenedor-recruiting{
+        background-image: url("../imagenes/naranja-movil.png");
+        align-items: center;
+        justify-content: center;
+        .recruiting {
+            width: 80%;
+        }
+    }
+    .contenedor-sourcing{
+        background-image: url("../imagenes/verde-movil.png");
+        align-items: center;
+        justify-content: center;
+        .sourcing {
+            padding: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+    }
+    
+    .info-recruiting {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .titulo{
+        text-align: center;
+    }
+}
